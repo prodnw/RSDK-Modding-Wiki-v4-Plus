@@ -1,9 +1,9 @@
 site_name: RSDK Modding Wiki
-site_description: Retro Engine modding guides and tools
+site_description: Retro Engine modding guides and tools with guides for RSDKv4+
 site_url: https://rsdkmodding.com
-site_author: RSDKModding Team
-repo_url: https://github.com/RSDKModding/RSDK-Modding-Wiki
-repo_name: RSDK-Modding-Wiki
+site_author: RSDKModding Team / v4+ Team
+repo_url: https://github.com/prodnw/RSDK-Modding-Wiki-v4-Plus
+repo_name: RSDK-Modding-Wiki-v4-Plus
 edit_uri: edit/master/docs/
 copyright: Not affiliated with Evening Star or SEGA
 theme:
@@ -323,6 +323,7 @@ nav:
             - LoadPalette: RSDKv4/RetroScript/Functions/Drawing/LoadPalette.md
             - RotatePalette: RSDKv4/RetroScript/Functions/Drawing/RotatePalette.md
             - SetScreenFade: RSDKv4/RetroScript/Functions/Drawing/SetScreenFade.md
+            - SetClassicFade: RSDKv4/RetroScript/Functions/Drawing/SetClassicFade.md
             - SetActivePalette: RSDKv4/RetroScript/Functions/Drawing/SetActivePalette.md
             - SetPaletteFade: RSDKv4/RetroScript/Functions/Drawing/SetPaletteFade.md
             - GetPaletteEntry: RSDKv4/RetroScript/Functions/Drawing/GetPaletteEntry.md
@@ -446,6 +447,9 @@ nav:
                 - SetModActive: RSDKv4/RetroScript/Functions/Misc/CallNativeFunction/SetModActive.md
                 - MoveMod: RSDKv4/RetroScript/Functions/Misc/CallNativeFunction/MoveMod.md
                 - RefreshEngine: RSDKv4/RetroScript/Functions/Misc/CallNativeFunction/RefreshEngine.md
+                - GetModID: RSDKv4/RetroScript/Functions/Misc/CallNativeFunction/GetModID.md
+            - LoadVideo: RSDKv4/RetroScript/Functions/Misc/LoadVideo.md
+            - NextVideoFrame: RSDKv4/RetroScript/Functions/Misc/NextVideoFrame.md
             - CheckTouchRect: RSDKv4/RetroScript/Functions/Misc/CheckTouchRect.md
             - CallFunction: RSDKv4/RetroScript/Functions/Misc/CallFunction.md
             - SetupMenu: RSDKv4/RetroScript/Functions/Misc/SetupMenu.md
@@ -458,6 +462,9 @@ nav:
             - Print: RSDKv4/RetroScript/Functions/Misc/Print.md
             - ReadSaveRAM: RSDKv4/RetroScript/Functions/Misc/ReadSaveRAM.md
             - WriteSaveRAM: RSDKv4/RetroScript/Functions/Misc/WriteSaveRAM.md
+            - CheckUpdates: RSDKv4/RetroScript/Functions/Misc/CheckUpdates.md
+            - GetUpdateChecker: RSDKv4/RetroScript/Functions/Misc/GetUpdateChecker.md
+            - SetUpdateChecker: RSDKv4/RetroScript/Functions/Misc/SetUpdateChecker.md
           - Input:
             - GetInputDeviceID: RSDKv4/RetroScript/Functions/Input/GetInputDeviceID.md
             - GetFilteredInputDeviceID: RSDKv4/RetroScript/Functions/Input/GetFilteredInputDeviceID.md
@@ -469,6 +476,14 @@ nav:
           - Deprecated:
             - LoadFontFile: RSDKv4/RetroScript/Functions/Deprecated/LoadFontFile.md
             - DrawText: RSDKv4/RetroScript/Functions/Deprecated/DrawText.md
+          - Discord RPC:
+            - SetPresenceState: RSDKv4/RetroScript/Functions/Discord/SetPresenceState.md
+            - SetPresenceDetails: RSDKv4/RetroScript/Functions/Discord/SetPresenceDetails.md
+            - SetPresenceLargeImage: RSDKv4/RetroScript/Functions/Discord/SetPresenceLargeImage.md
+            - SetPresenceLargeText: RSDKv4/RetroScript/Functions/Discord/SetPresenceLargeText.md
+            - SetPresenceSmallImage: RSDKv4/RetroScript/Functions/Discord/SetPresenceSmallImage.md
+            - SetPresenceSmallText: RSDKv4/RetroScript/Functions/Discord/SetPresenceSmallText.md
+            - UpdatePresence: RSDKv4/RetroScript/Functions/Discord/UpdatePresence.md
 
     - RSDKv5:
       - RSDKv5/README.md

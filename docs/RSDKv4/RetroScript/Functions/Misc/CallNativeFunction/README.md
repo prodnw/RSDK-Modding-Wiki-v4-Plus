@@ -100,3 +100,4 @@ CallNativeFunction4(NotifyCallback, NOTIFY_STATS_ENEMY, StageStatsUsabilityParam
 | [**SetModActive**](SetModActive.md)                           | Sets if a mod is enabled.                                                  |
 | [**MoveMod**](MoveMod.md)                                     | Shifts a mod up or down in the mods list.                                  |
 | [**RefreshEngine**](RefreshEngine.md)                         | Reloads the engine, the game, and all mods.                                |
+| [**GetModID**](GetModID.md)                                   | Grabs the ID of any mod in your mod list.                                  |

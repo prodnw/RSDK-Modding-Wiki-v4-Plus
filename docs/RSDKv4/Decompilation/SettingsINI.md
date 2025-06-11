@@ -45,6 +45,7 @@ The following options aren't written to the file by default, but can be added ma
 | **GameType**             | Determines if scripts will load Standalone (`0`) or Origins (`1`) code.                                                                         | Integer                                                               | `0`           |
 | **SkipStartMenu**        | When enabled, bypasses the [start menu] and instead loads the first scene in the Presentation stage list. This does not disable the pause menu. | Boolean                                                               | `false`       |
 | **DisableFocusPause**    | Determines the pausing behavior when focus is lost.                                                                                             | Integer (See [DisableFocusPause Options](#disablefocuspause-options)) | `0`           |
+| **CheckForUpdates**             | the game will check for updates on game launch. (Only used in specific projects.)                                                                         | Integer                                                               | `1`           |
 
   [start menu]: TODO
 

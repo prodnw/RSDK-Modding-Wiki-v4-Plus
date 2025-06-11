@@ -38,11 +38,11 @@ Welcome to the RSDK Modding Wiki, your one-stop shop for documentation, resource
 
     Documentation for RSDKv5 and GameAPI
 
--   :rsdk-icon-v4: __[Retro Engine v4](RSDKv4/README.md)__
+-   :rsdk-icon-v4: __[Retro Engine v4+](RSDKv4/README.md)__
 
     ---
 
-    Documentation for RSDKv4 and RetroScript v4
+    Documentation for RSDKv4+ and RetroScript v4
 
 -   :rsdk-icon-v3: __[Retro Engine v3](RSDKv3/README.md)__
 

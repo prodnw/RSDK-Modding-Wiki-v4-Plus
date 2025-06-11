@@ -3,7 +3,7 @@
 ## Script
 | Variable        | Description                                                                                       |
 | --------------- | ------------------------------------------------------------------------------------------------- |
-| **temp0-7**     | Temporary values used to store values during arithmetic or other similar operations.              |
+| **temp0-10**     | Temporary values used to store values during arithmetic or other similar operations.             |
 | **checkResult** | A value that some functions set as the resulting value. Can be used with all sorts of arithmetic. |
 | **arrayPos0-7** | Used to store an array of data.                                                                   |
 | **global**      | Can be used to use global variables as an array (Ex. global[arrayPos0] = 0).                      |
@@ -75,6 +75,7 @@
 | Variable                 | Description                                                                                                                                 |
 | ------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------- |
 | **keyDown/keyPress.[X]** | General inputs for controllers. `keyDown` is true if a button/key is held, while `keyPress` is true if a button/key was pressed on a frame. |
+| **inputDown/inputPress.[X]** | The same as above but named different. Added for the use of script compatibility between this version and pre 1.3.1.                                                                            |
 |
 
 ## Menu

@@ -36,12 +36,16 @@ DrawSpriteScreenFX(2, FX_FLIP, screen.xcenter, 15)
 ## drawFXFlag Effects
 | Effect        | Description                                                                                                   |
 | ------------- | ------------------------------------------------------------------------------------------------------------- |
-| `FX_SCALE`    | Allows the scaling of the sprite via `object.scale`.                                                          |
+| `FX_SCALE`    | Allows the scaling of the sprite via `object.scale`.       
+| `FX_HSCALE`    | Allows the horizontal scaling of the sprite via `object.scale`.       
+| `FX_VSCALE`    | Allows the vertical scaling of the sprite via `object.scale`.                                                               |
 | `FX_ROTATE`   | Allows the rotation of the sprite via `object.rotation`.                                                      |
 | `FX_ROTOZOOM` | Allows both scaling via `object.scale` and rotation via `object.rotation`.                                    |
 | `FX_INK`      | Allows using transparency based on `object.inkEffect`.                                                        |
 | `FX_TINT`     | Tints the sprite to grayscale if `object.inkEffect` is set to `INK_ALPHA`, otherwise it acts like `FX_SCALE`. |
-| `FX_FLIP`     | Flips the sprite depending on `object.direction`.                                                             |
+| `FX_FLIP`     | Flips the sprite depending on `object.direction`.                                                       
+| `FX_ALL`    | Allows all of the effects listed above to be used at once.  
+      |
 
 !!! note
     `FX_TINT` does not have an alias set by default. Its numeric ID is `4`.
