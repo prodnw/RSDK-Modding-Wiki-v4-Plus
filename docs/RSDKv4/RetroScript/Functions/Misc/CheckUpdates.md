@@ -19,5 +19,5 @@ CheckUpdates("(github link))
 
 ## Examples
 ```
-CheckUpdates("https://prodnw.github.io/DoF-version-number/")
+CheckUpdates("prodnw.github.io/DoF-version-number/")
 ```
