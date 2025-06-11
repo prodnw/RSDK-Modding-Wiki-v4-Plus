@@ -1,18 +1,23 @@
 # CheckUpdates
 
 ## Description
-Checks for any updates.
+Checks for any updates from a GitHub pages link.
 
 !!! note
-    - The base engine only makes it work with my fangame (Sonic and the Duel of Fates), but can be changed to work for your own project.
+    Feel free to use my GitHub page as a reference for how it should work. (https://github.com/prodnw/DoF-version-number).
 
 ## Parameters
 None.
 
 ## Return Value
-todo
+None.
+
+## Syntax
+```
+CheckUpdates("(github link))
+```
 
 ## Examples
 ```
-CheckUpdates()
+CheckUpdates("https://prodnw.github.io/DoF-version-number/")
 ```
