@@ -1,0 +1,90 @@
+/* Light theme */
+[data-md-color-scheme="default"] {
+    --md-primary-fg-color: rgb(35, 31, 32);
+    --md-primary-fg-color--dark: var(--md-primary-fg-color);
+    --md-footer-bg-color: var(--md-primary-fg-color);
+    --md-footer-bg-color--dark: var(--md-primary-fg-color);
+    --md-default-bg-color: rgb(248, 248, 248);
+    --md-button-color: rgb(255, 255, 0);
+    --md-button-hover-color: rgb(255, 192, 0);
+    --content-bg-color: hsl(26, 35%, 85%);
+    --circle-border-color: rgba(224, 208, 192, 20%);
+    --square-border-color: rgba(224, 0, 0, 20%);
+    --md-typeset-a-color: #5488E8;
+    --controller-a-color: #00C800;
+    --controller-b-color: #F0B000;
+    --controller-c-color: #0020B0;
+    --controller-start-color: #E00000;
+}
+
+/* Dark theme */
+[data-md-color-scheme="slate"] {
+    --md-primary-fg-color: rgb(35, 31, 32);
+    --md-primary-fg-color--dark: var(--md-primary-fg-color);
+    --md-footer-bg-color: var(--md-primary-fg-color);
+    --md-footer-bg-color--dark: var(--md-primary-fg-color);
+    --md-default-bg-color: rgb(7, 7, 7);
+    --md-button-color: var(--md-typeset-a-color);
+    --md-button-hover-color: var(--md-accent-fg-color);
+    --content-bg-color: hsl(210, 14%, 18%);
+    --circle-border-color: rgba(31, 47, 63, 20%);
+    --square-border-color: rgba(0, 0, 224, 20%);
+    --controller-a-color: #70C040;
+    --controller-b-color: #F0D800;
+    --controller-c-color: #1870B8;
+    --controller-start-color: var(--md-typeset-color);
+}
+
+/* Form button */
+.md-typeset .md-button:not(:focus, :hover) {
+  color: var(--md-typeset-color);
+}
+
+/* Primary form button */
+.md-typeset .md-button--primary:not(:focus, :hover) {
+  color: var(--md-typeset-color);
+  background-color: var(--md-button-color);
+  border-color: var(--md-typeset-color);
+}
+
+/* Hovered over form button */
+.md-typeset .md-button:is(:focus, :hover) {
+  color: var(--md-typeset-color);
+  background-color: var(--md-button-hover-color);
+  border-color: var(--md-typeset-color);
+}
+
+/* Controller button icons */
+.controller-a {
+  color: var(--controller-a-color);
+}
+.controller-b {
+  color: var(--controller-b-color);
+}
+.controller-c {
+  color: var(--controller-c-color);
+}
+.controller-start {
+  color: var(--controller-start-color);
+}
+
+/* RSDK versions */
+.rsdkv3 {
+  color: #CE3F49;
+}
+.rsdkv4 {
+  color: #0575BB;
+}
+.rsdkv5 {
+  color: #E0C251;
+}
+
+/* Red ("TODO") links */
+.md-typeset a[href $= 'TODO']:not(:focus, :hover) {
+  color: rgb(194, 0, 0);
+}
+
+/* Hovered red ("TODO") links */
+.md-typeset a[href $= 'TODO']:is(:focus, :hover) {
+  color: rgb(240, 0, 0);
+}
