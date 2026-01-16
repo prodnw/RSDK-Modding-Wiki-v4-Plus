@@ -809,6 +809,10 @@
          <lastmod>2026-01-16</lastmod>
     </url>
     <url>
+         <loc>https://rsdkmodding.com/RSDKv4/RetroScript/Functions/Audio/PauseSfx/</loc>
+         <lastmod>2026-01-16</lastmod>
+    </url>
+    <url>
          <loc>https://rsdkmodding.com/RSDKv4/RetroScript/Functions/Audio/PlayMusic/</loc>
          <lastmod>2026-01-16</lastmod>
     </url>
@@ -818,6 +822,10 @@
     </url>
     <url>
          <loc>https://rsdkmodding.com/RSDKv4/RetroScript/Functions/Audio/ResumeMusic/</loc>
+         <lastmod>2026-01-16</lastmod>
+    </url>
+    <url>
+         <loc>https://rsdkmodding.com/RSDKv4/RetroScript/Functions/Audio/ResumeSfx/</loc>
          <lastmod>2026-01-16</lastmod>
     </url>
     <url>
