@@ -1,0 +1,66 @@
+.md-content {
+    border-radius: 1em;
+    background-color: color-mix(in hsl, var(--content-bg-color) 80%, transparent 63%);
+}
+
+.md-main__inner {
+    margin-bottom: 1.5rem;
+}
+
+.md-nav--primary .md-nav__title {
+    background: none;
+    box-shadow: none;
+}
+
+.md-typeset h1,
+.md-typeset h2,
+.md-typeset h3,
+.md-typeset h4,
+.md-typeset h5,
+.md-typeset h6 {
+    font-weight: bold;
+}
+
+.md-typeset h1 {
+    color: var(--md-typeset-color);
+}
+
+.md-typeset h1 .headerlink {
+    display: none;
+}
+
+.tabbed-labels {
+    background-color: color-mix(in hsl, var(--content-bg-color) 80%, transparent);
+}
+
+.md-typeset .tabbed-control--next {
+    background: linear-gradient(to left, var(--content-bg-color) 50%, transparent)
+}
+
+.md-typeset .tabbed-control--prev {
+    background: linear-gradient(to right, var(--content-bg-color) 50%, transparent)
+}
+
+.uncenter {
+    text-align: center;
+    max-width: 40%;
+    float: left;
+    margin: 0;
+    padding: 25px;
+}
+
+/* Desktop/Mobile specific content (thanks to kamilkrzyskow for helping with this) */
+
+/* Hide .desktop-only content if on mobile */
+@media only screen and (max-width: 600px) { 
+    .desktop-only { 
+        display: none; 
+    } 
+}
+
+/* Hide .mobile-only content if not on mobile */
+@media only screen and (min-width: 601px) { 
+    .mobile-only { 
+        display: none; 
+    } 
+}
