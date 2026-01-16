@@ -23,6 +23,10 @@
 | [**ResumeMusic**](Audio/ResumeMusic.md)           | If a track has been paused with [PauseMusic()](Audio/PauseMusic.md), resumes playing the track.                                               |
 | [**SwapMusicTrack**](Audio/SwapMusicTrack.md)     | Loads a music file in the given track slot with the given loop point, swapping the currently playing track if it's the one being overwritten. |
 | [**PlaySfx**](Audio/PlaySfx.md)                   | Plays the sound effect in the given slot in the GameConfig or StageConfig, looping it if set to do so.                                        |
+| [**PauseSfx**](Audio/PauseSfx.md)                 | Pauses a specific sound effect, it'll have to be playing for it to take 
+action.                                        |
+| [**ResumeSfx**](Audio/ResumeSfx.md)               | Resumes a specific sound effect, it'll have to be already paused for it to take 
+action.                                        |
 | [**StopSfx**](Audio/StopSfx.md)                   | Stops all instances of the given sound effect playing.                                                                                        |
 | [**SetSfxAttributes**](Audio/SetSfxAttributes.md) | Sets the loop count and panning of the given sound effect to the given values.                                                                |
 

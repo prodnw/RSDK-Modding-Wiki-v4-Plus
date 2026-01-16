@@ -1,13 +1,14 @@
 # RSDKv4 Variables
 
 ## Script
-| Variable        | Description                                                                                       |
-| --------------- | ------------------------------------------------------------------------------------------------- |
-| **temp0-7**     | Temporary values used to store values during arithmetic or other similar operations.              |
-| **checkResult** | A value that some functions set as the resulting value. Can be used with all sorts of arithmetic. |
-| **arrayPos0-7** | Used to store an array of data.                                                                   |
-| **global**      | Can be used to use global variables as an array (Ex. global[arrayPos0] = 0).                      |
-| **local**       | Can be used to use local variables as an array (Ex. local[arrayPos0] = 0).                        |
+| Variable              | Description                                                                                       |
+| --------------------- | ------------------------------------------------------------------------------------------------- |
+| **temp0-10**          | Temporary values used to store values during arithmetic or other similar operations.              |
+| **tempStr0-10**       | Temporary values used to store strings and text.                                                  |
+| **checkResult**       | A value that some functions set as the resulting value. Can be used with all sorts of arithmetic. |
+| **arrayPos0-7**       | Used to store an array of data.                                                                   |
+| **global**            | Can be used to use global variables as an array (Ex. global[arrayPos0] = 0).                      |
+| **local**             | Can be used to use local variables as an array (Ex. local[arrayPos0] = 0).                        |
 
 ## Object
 | Variable                 | Description                                                                                                                      |
