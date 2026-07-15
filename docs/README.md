@@ -22,6 +22,9 @@ Welcome to the RSDK Modding Wiki, your one-stop shop for documentation, resource
 !!! warning
     This site is a heavy work-in-progress. Expect missing information and empty/placeholder pages. Everything is subject to change.
 
+!!! notice
+    This site is a FORK made specifically to document features from RSDKv4+, there may be some inconsistencies with the main branch, but we'll do our best to keep everything updated!
+
 ## Contents
 
 <div class="grid cards" markdown>
@@ -38,11 +41,11 @@ Welcome to the RSDK Modding Wiki, your one-stop shop for documentation, resource
 
     Documentation for RSDKv5 and GameAPI
 
--   :rsdk-icon-v4: __[Retro Engine v4](RSDKv4/README.md)__
+-   :rsdk-icon-v4: __[Retro Engine v4+](RSDKv4/README.md)__
 
     ---
 
-    Documentation for RSDKv4 and RetroScript v4
+    Documentation for RSDKv4, RSDKv4+ and RetroScript v4
 
 -   :rsdk-icon-v3: __[Retro Engine v3](RSDKv3/README.md)__
 

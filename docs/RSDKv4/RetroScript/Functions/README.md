@@ -150,3 +150,16 @@
 | ---------------------------------------------- | ------------------------------------------------------------ |
 | [**LoadFontFile**](Deprecated/LoadFontFile.md) | Loads a bitmap font from `filePath` for use with text menus. |
 | [**DrawText**](Deprecated/DrawText.md)         | Draws the contents of `menu`.                                |
+
+## Discord
+| Function                                                      | Description                                                                                      |
+| ------------------------------------------------------------- | ------------------------------------------------------------------------------------------------ |
+| [**SetPresenceState**](Discord/SetPresenceState.md)           | Sends `text` to the Discord API to display it on your state status.                              |
+| [**SetPresenceDetails**](Discord/SetPresenceDetails.md)       | Sends `text` to the Discord API to display it on your details status.                            |
+| [**SetPresenceLargeImage**](Discord/SetPresenceLargeImage.md) | Uses an `image` from the art assets in your dev portal application to display it on your status. |
+| [**SetPresenceLargeText**](Discord/SetPresenceLargeText.md)   | Sends `text` to the Discord API to display when you hover over the large image.                  |
+| [**SetPresenceSmallImage**](Discord/SetPresenceSmallImage.md) | Uses an `image` from the art assets in your dev portal application to display it on your status. |
+| [**SetPresenceSmallText**](Discord/SetPresenceSmallText.md)   | Sends `text` to the Discord API to display when you hover over the small image.                  |
+| [**UpdatePresence**](Discord/UpdatePresence.md)               | Updates the your RPC based on the commands above.                                                |
+| [**ClearPresence**](Discord/ClearPresence.md)                 | Completely gets rid of your status.                                                              |
+| [**ClearPresenceType**](Discord/ClearPresenceType.md)         | Completely gets rid of one of your statuses.                                                     |
