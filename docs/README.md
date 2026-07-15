@@ -23,7 +23,7 @@ Welcome to the RSDK Modding Wiki, your one-stop shop for documentation, resource
     This site is a heavy work-in-progress. Expect missing information and empty/placeholder pages. Everything is subject to change.
 
 !!! notice
-    This site is a FORK made specifically to document features from RSDKv4+, there may be some inconsistencies with the main branch, but we'll do our best to keep everything updated!
+    This site is a FORK made specifically to document features from RSDKv4+, there may be some inconsistencies with the main branch, but we'll do our best to keep everything updated! Please check out the original repository [here](https://github.com/RSDKModding/RSDK-Modding-Wiki).
 
 ## Contents
 
@@ -93,7 +93,7 @@ Welcome to the RSDK Modding Wiki, your one-stop shop for documentation, resource
 
 ## Contributing
 
-We greatly appreciate contributions to the wiki! If you'd like to help out, you can find info on contributing on the wiki's [GitHub repository](https://github.com/RSDKModding/RSDK-Modding-Wiki).
+We greatly appreciate contributions to the wiki! If you'd like to help out, you can find info on contributing on the wiki's [GitHub repository](https://github.com/prodnw/RSDK-Modding-Wiki-v4-Plus).
 
 ## Join the Discord server!
 
