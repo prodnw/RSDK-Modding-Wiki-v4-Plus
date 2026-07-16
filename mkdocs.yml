@@ -1,6 +1,6 @@
 site_name: RSDK Modding Wiki
 site_description: Retro Engine modding guides and tools
-site_url: https://rsdkmodding.com
+site_url: https://prodnw.github.io/RSDK-Modding-Wiki-v4-Plus/
 site_author: RSDKModding Team
 repo_url: https://github.com/prodnw/RSDK-Modding-Wiki-v4-Plus
 repo_name: RSDK-Modding-Wiki
@@ -465,6 +465,8 @@ nav:
             - SetupMenu: RSDKv4/RetroScript/Functions/Misc/SetupMenu.md
             - AddMenuEntry: RSDKv4/RetroScript/Functions/Misc/AddMenuEntry.md
             - EditMenuEntry: RSDKv4/RetroScript/Functions/Misc/EditMenuEntry.md
+            - LoadVideo: RSDKv4/RetroScript/Functions/Misc/LoadVideo.md
+            - NextVideoFrame: RSDKv4/RetroScript/Functions/Misc/NextVideoFrame.md
             - DrawMenu: RSDKv4/RetroScript/Functions/Misc/DrawMenu.md
             - GetTextInfo: RSDKv4/RetroScript/Functions/Misc/GetTextInfo.md
             - GetVersionNumber: RSDKv4/RetroScript/Functions/Misc/GetVersionNumber.md

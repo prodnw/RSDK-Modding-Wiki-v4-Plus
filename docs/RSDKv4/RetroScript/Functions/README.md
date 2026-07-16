@@ -130,6 +130,8 @@
 | [**GetTextInfo**](Misc/GetTextInfo.md)                      | Gets the data of `type` from `menu` using `index` and stores it in `store`.                              |
 | [**GetVersionNumber**](Misc/GetVersionNumber.md)            | Adds a text entry to `menu` with the engine's version as the text.                                       |
 | [**LoadTextFile**](Misc/LoadTextFile.md)                    | Loads `menu` based on the text file loaded from `filePath`.                                              |
+| [**LoadVideo**](Misc/LoadVideo.md)                          | Loads and plays a video.                                                                                 |
+| [**NextVideoFrame**](Misc/NextVideoFrame.md)                | Advances the video frame of an RSV video.                                                                |
 | [**Print**](Misc/Print.md)                                  | Prints a message or integer to the console.                                                              |
 | [**ReadSaveRAM**](Misc/ReadSaveRAM.md)                      | Reads the contents of the save file on disk into SaveRAM.                                                |
 | [**WriteSaveRAM**](Misc/WriteSaveRAM.md)                    | Writes the contents of SaveRAM to the save file on disk.                                                 |

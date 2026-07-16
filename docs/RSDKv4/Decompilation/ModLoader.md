@@ -69,6 +69,10 @@ mod.ini is a file containing metadata for the mod, as well as flags that can be 
 
 :   The creator of the mod.
 
+`AuthorURL`
+
+:   (RSDKv4+ Only) The link to an authors website or their profile. (If you press Y in the Mod Menu while hovering over a mode, you'll go to website of the mod you're hovering over if there is one!)
+
 `Version`
 
 :   The mod's version number. There is no specific version scheme used, so use whatever you prefer.
@@ -108,6 +112,14 @@ All of these flags take a boolean (`false`/`true`) unless stated otherwise. You 
 :   Forces the engine version when used in the [RSDKv5U Decompilation]. This should normally never be necessary, however. Forces RSDKv4 when set to `4`.
 
   [RSDKv5U Decompilation]: /RSDKv5/Decompilation
+
+`DiscordGameClientID`
+
+:   (RSDKV4+ Only) If `RETRO_USE_DISCORD` is on, then force the engine to load data for Discord RPC from the specified app instead. The Appilcation ID must go in here.
+
+`ForceGameType`
+
+:   (RSDKV4+ Only) Forces your mod to use a specific game type. Please refer to [this](https://github.com/prodnw/rsdkv4-plus/blob/main/RSDKv4/ModAPI.cpp#L247) for a list of game types you can use, along with what you'll need to put in exactly.
 
 !!! info
     Versions of the decompilation prior to 1.3.0 used an `Active` flag to determine whether or not the mod is enabled. This flag has since been deprecated and is no longer used.

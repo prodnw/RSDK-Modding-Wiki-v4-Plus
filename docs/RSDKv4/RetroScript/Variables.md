@@ -4,6 +4,8 @@
 | Variable        | Description                                                                                       |
 | --------------- | ------------------------------------------------------------------------------------------------- |
 | **temp0-7**     | Temporary values used to store values during arithmetic or other similar operations.              |
+| **temp8-10**    | (RSDKv4 Only) Additional temporary values that still serve the same purpose. 		              |
+| **tempStr0-10** | (RSDKv4 Only) Temporary values used to store strings. 		              						  |
 | **checkResult** | A value that some functions set as the resulting value. Can be used with all sorts of arithmetic. |
 | **arrayPos0-7** | Used to store an array of data.                                                                   |
 | **global**      | Can be used to use global variables as an array (Ex. global\[arrayPos0] = 0).                     |
@@ -46,23 +48,25 @@
 | **stage.entityPos**              | The entity last loaded by the stage.                                                                                                                                               |
 
 ## Screen
-| Variable                 | Description                                                                                                          |
-| ------------------------ | -------------------------------------------------------------------------------------------------------------------- |
-| **screen.cameraEnabled** | Determines if the camera is disabled or not.                                                                         |
-| **screen.cameraTarget**  | Gets the entity pos of an object and sets the camera to follow it. (Ex. screen.cameraTarget = SLOT_PLAYER1 (0))      |
-| **screen.cameraStyle**   | How the camera should track its target.                                                                              |
-| **screen.cameraX**       | The xpos of the camera in screen-space.                                                                              |
-| **screen.cameraY**       | The ypos of the camera in screen-space.                                                                              |
-| **screen.drawListSize**  | How many entities are being drawn on screen at once.                                                                 |
-| **screen.xcenter**       | The xcenter of the screen. By default, this value is 212.                                                            |
-| **screen.ycenter**       | The ycenter of the screen. By default, this value is 120, but cannot be normally changed.                            |
-| **screen.xsize**         | The xsize of the screen. By default, this value is 424.                                                              |
-| **screen.ysize**         | The ysize of the screen. By default, this value is 240, but cannot be normally changed.                              |
-| **screen.xoffset**       | The xoffset of the screen, relative to the very beginning of the scene.                                              |
-| **screen.yoffset**       | The yoffset of the screen, relative to the very beginning of the scene.                                              |
-| **screen.shakeX**        | If more than 0, this will horizontally shake the screen. The aggression of the shaking will depend on the value set. |
-| **screen.shakeY**        | If more than 0, this will vertically shake the screen. The aggression of the shaking will depend on the value set.   |
-| **screen.adjustCameraY** | The amount the camera should vertically adjust.                                                                      |
+| Variable                		   | Description                                                                                                          |
+| -------------------------------- | -------------------------------------------------------------------------------------------------------------------- |
+| **screen.cameraEnabled**         | Determines if the camera is disabled or not.                                                                         |
+| **screen.cameraTarget**          | Gets the entity pos of an object and sets the camera to follow it. (Ex. screen.cameraTarget = SLOT_PLAYER1 (0))      |
+| **screen.cameraStyle**           | How the camera should track its target.                                                                              |
+| **screen.cameraX**       		   | The xpos of the camera in screen-space.                                                                              |
+| **screen.cameraY**       		   | The ypos of the camera in screen-space.                                                                              |
+| **screen.drawListSize**  		   | How many entities are being drawn on screen at once.                                                                 |
+| **screen.xcenter**       		   | The xcenter of the screen. By default, this value is 212.                                                            |
+| **screen.ycenter**       		   | The ycenter of the screen. By default, this value is 120, but cannot be normally changed.                            |
+| **screen.xsize**    		       | The xsize of the screen. By default, this value is 424.                                                              |
+| **screen.ysize**        		   | The ysize of the screen. By default, this value is 240, but cannot be normally changed.                              |
+| **screen.xoffset**        	   | The xoffset of the screen, relative to the very beginning of the scene.                                              |
+| **screen.yoffset**        	   | The yoffset of the screen, relative to the very beginning of the scene.                                              |
+| **screen.shakeX**        		   | If more than 0, this will horizontally shake the screen. The aggression of the shaking will depend on the value set. |
+| **screen.shakeY**        		   | If more than 0, this will vertically shake the screen. The aggression of the shaking will depend on the value set.   |
+| **screen.adjustCameraY** 		   | The amount the camera should vertically adjust.                                                                      |
+| **camera.direction** 	   		   | (RSDKv4+ Only) The direction that the camera is facing. It can be flipped to face in many directions.                |
+| **camera.drawLayer[X]Direction** | (RSDKv4+ Only) The direction of a specific drawing layer. `X` is what the layer would be                             |
 
 ## Audio
 | Variable               | Description                                                                                                                       |
@@ -72,15 +76,22 @@
 | **music.position**     | The position (by sample) of the currently playing track.                                                                          |
 
 ## Input
-| Variable                  | Description                                                                                                                                 |
-| ------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- |
-| **keyDown/keyPress.\[X]** | General inputs for controllers. `keyDown` is true if a button/key is held, while `keyPress` is true if a button/key was pressed on a frame. |
-|
+| Variable                  		      	 | Description                                                                                                                                 											     													 	  |
+| ------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **keyDown/keyPress.\[X]** 			   	 | General inputs for controllers. `keyDown` is true if a button/key is held, while `keyPress` is true if a button/key was pressed on a frame. 											     														  |
+| **object.keyFlip** 					   	 | (RSDKv4+ Only) Flips your controls to be inverted. 																						  											     														  |
+| **key.pressed/key.down\[X]** 			   	 | (RSDKv4+ Only) Checks if any key on your keyboard has been pressed or held down. 																										 														  |
+| **controller.pressed/controller.down\[X]** | (RSDKv4+ Only) Checks if any key on your keyboard has been pressed or held down. 																										 														  |
+| **inputDown/inputPress.\[X]** 		   	 | (RSDKv4+ Only, `RETRO_USE_OLD_SYNTAX` on) General inputs for controllers. `inputDown` is true if a button/key is held, while `inputPress` is true if a button/key was pressed on a frame. 														  |
+| **controller.device** 		   	 		 | (RSDKv4+ Only) If playing on controller, then detect what controller you're using. Refer to [here](https://github.com/prodnw/rsdkv4-plus/blob/main/RSDKv4/Script.cpp#L897) for a list of controllers supported and what value is returned on each. |
+| **controller.wired** 		   	 		 	 | (RSDKv4+ Only) If playing on controller, then detect if you're playing through a cable or not. 																																					  |
+| **controller.vibrationEnabled** 		   	 | (RSDKv4+ Only) If playing on controller, then detect if vibration is on or not. Refer to `ControllerVibration` in the `settings.ini`.																											  |
 
 ## Menu
-| Variable              | Description                                            |
-| --------------------- | ------------------------------------------------------ |
-| **menu1/2.selection** | The current row, as selected by `MENU_1` and `MENU_2`. |
+| Variable              | Description                                            				|
+| --------------------- | --------------------------------------------------------------------- |
+| **menu1/2.selection** | The current row, as selected by `MENU_1` and `MENU_2`. 				|
+| **menu3/4.selection** | (RSDKv4+ Only) The current row, as selected by `MENU_3` and `MENU_4`. |
 
 ## Tile Layer
 
@@ -99,15 +110,19 @@
 | **vertexBuffer.x/y/z/u/v** | The vertex coordinates for a specified vertex. |
 
 ## Engine
-| Variable                | Description                                                                                                              |
-| ----------------------- | ------------------------------------------------------------------------------------------------------------------------ |
-| **saveRAM\[index]**     | Capable of saving data to the array of `index`, using the `Read/WriteSaveRAM()` functions.                               |
-| **engine.state**        | The engine's current processing state.                                                                                   |
-| **engine.language**     | The active language the engine is using.                                                                                 |
-| **engine.onlineActive** | Gets the engine's state with online connectivity.                                                                        |
-| **engine.sfxVolume**    | The engine's master sound effect output volume. Ranges from 0-100.                                                       |
-| **engine.bgmVolume**    | The engine's master music volume output. Ranges from 0-100. Combined with 'music.volume' to get the final output volume. |
-| **engine.trialMode**    | Used in a trial version of a game to handle certain events differently.                                                  |
+| Variable                 | Description                                                                                                              |
+| ------------------------ | ------------------------------------------------------------------------------------------------------------------------ |
+| **saveRAM\[index]**      | Capable of saving data to the array of `index`, using the `Read/WriteSaveRAM()` functions.                               |
+| **engine.state**         | The engine's current processing state.                                                                                   |
+| **engine.language**      | The active language the engine is using.                                                                                 |
+| **engine.onlineActive**  | Gets the engine's state with online connectivity.                                                                        |
+| **engine.sfxVolume**     | The engine's master sound effect output volume. Ranges from 0-100.                                                       |
+| **engine.voiceVolume**   | (RSDKv4+ Only) The engine's master voice output volume. Ranges from 0-100.                                               |
+| **engine.bgmVolume**     | The engine's master music volume output. Ranges from 0-100. Combined with 'music.volume' to get the final output volume. |
+| **engine.trialMode**     | Used in a trial version of a game to handle certain events differently.                                                  |
+| **engine.deviceType**    | Gets the device type that you're playing on. `0 for standalone`, and `1 for mobile`.                                     |
+| **game.checkForUpdates** | (RSDKv4+ Only) Checks whether the updater is enabled or not. Refer to `CheckForUpdates` in the `settings.ini`.           |
+| **game.networkPing** 	   | (RSDKv4+ Only) Gets the value of your network ping if you're playing an online match.                          		  |
 
 ## Extras
 

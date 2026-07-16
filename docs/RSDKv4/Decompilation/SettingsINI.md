@@ -39,12 +39,17 @@ The following options aren't written to the file by default, but can be added ma
 | **255**       | Disable     |
 
 ## Game
-| Setting Name             | Description                                                                                                                                     | Value Type                                                            | Default Value |
-| ------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------- | ------------- |
-| **Language**             | The language the game will use.                                                                                                                 | Integer (See [Languages](#languages))                                 | `0`           |
-| **GameType**             | Determines if scripts will load Standalone (`0`) or Origins (`1`) code.                                                                         | Integer                                                               | `0`           |
-| **SkipStartMenu**        | When enabled, bypasses the [start menu] and instead loads the first scene in the Presentation stage list. This does not disable the pause menu. | Boolean                                                               | `false`       |
-| **DisableFocusPause**    | Determines the pausing behavior when focus is lost.                                                                                             | Integer (See [DisableFocusPause Options](#disablefocuspause-options)) | `0`           |
+| Setting Name             | Description                                                                                                                                    						 							   | Value Type                                                            | Default Value                |
+| ------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------- | ---------------------------- |
+| **Language**             | The language the game will use.                                                                                                                 						   							   | Integer (See [Languages](#languages))                                 | `0`           				  |
+| **GameType**             | Determines if scripts will load Standalone (`0`) or Origins (`1`) code.                                                                         						   							   | Integer                                                               | `0`           				  |
+| **SkipStartMenu**        | When enabled, bypasses the [start menu] and instead loads the first scene in the Presentation stage list. This does not disable the pause menu. 						   							   | Boolean                                                               | `false`       				  |
+| **DisableFocusPause**    | Determines the pausing behavior when focus is lost.                                                                                       						   		   							   | Integer (See [DisableFocusPause Options](#disablefocuspause-options)) | `0`           				  |
+| **CheckForUpdates**      | When enabled, the game will check for updates on startup.                                                                                       						  							   | Integer 															   | `0`           				  |
+| **ForcePlatform**        | Forces the platform used in scripts, set to -1 to use the current platform. Check the [platform aliases](https://github.com/prodnw/rsdkv4-plus/blob/main/RSDKv4/RetroEngine.hpp#L46) for a full list. | Integer 															   | `-1`          				  |
+| **ForceDeviceType**      | Forces the device type used in scripts (-1 = use the current platform type, 0 = Standalone, 1 = Mobile)                                                                 							   | Integer 															   | `-1`          				  |
+| **UseDiscordRPC**        | When enabled, Discord RPC will be enabled and your profile will be updated. `RETRO_USE_DISCORD` must be on.                                                               							   | Boolean 															   | `0`           				  |
+| **Username**     		   | Your username for the engine, stored and used purely for visual purposes.                           							                                                            		   | String 															   | `IntegerGeorge802`           |
 
   [start menu]: TODO
 
@@ -90,15 +95,13 @@ The following options aren't written to the file by default, but can be added ma
 | **DimLimit**         | The amount of time, in seconds, that it takes for the screen idle dim to activate. `-1` will disable the dim.       | Integer    | `300`         |
 
 ## Audio
-| Setting Name  | Description                                                   | Value Type | Default Value |
-| ------------- | ------------------------------------------------------------- | ---------- | ------------- |
-| **BGMVolume** | The volume of background music. Range is from `0.0` to `1.0`. | Float      | `1.000000`    |
-| **SFXVolume** | The volume of sound effects. Range is from `0.0` to `1.0`.    | Float      | `1.000000`    |
+| Setting Name    | Description                                                   | Value Type | Default Value |
+| --------------- | ------------------------------------------------------------- | ---------- | ------------- |
+| **BGMVolume**   | The volume of background music. Range is from `0.0` to `1.0`. | Float      | `1.000000`    |
+| **SFXVolume**   | The volume of sound effects. Range is from `0.0` to `1.0`.    | Float      | `1.000000`    |
+| **VoiceVolume** | The volume of voices. Range is from `0.0` to `1.0`.    		  | Float      | `1.000000`    |
 
 ## Keyboard 1
-
-!!! note
-    Despite what the name of this category may imply, RSDKv4 does not support more than one local player.
 
 All settings for this category take an integer value based on SDL's Scancodes. See [this lookup table](https://wiki.libsdl.org/SDL2/SDLScancodeLookup) for a list of usable keys and their corresponding decimal values.
 
@@ -118,9 +121,6 @@ All settings for this category take an integer value based on SDL's Scancodes. S
 | **Select**   | `43` ( ++tab++ )   |
 
 ## Controller 1
-
-!!! note
-    Despite what the name of this category may imply, RSDKv4 does not support more than one local player.
 
 These controller mapping settings take integer values. See [Controller Buttons](#controller-buttons) for a list of buttons and their corresponding IDs.
 
@@ -147,6 +147,12 @@ These deadzone settings take floats values. Range is from `0.0` to `1.0`.
 | **RStickDeadzone**   | `0.300000`    |
 | **LTriggerDeadzone** | `0.300000`    |
 | **RTriggerDeadzone** | `0.300000`    |
+
+These are additioninal controller settings, only available through RSDKv4+.
+
+| Setting Name         	  | Description                                                                                                         | Value Type | Default Value |
+| ----------------------- | ------------------------------------------------------------------------------------------------------------------- | ---------- | ------------- |
+| **ControllerVibration** | Determines if controller vibration is on or not.                                                                    | Boolean    | `true`        |
 
 ### Controller Buttons
 | Setting Value | Controller Button                                                                                                           |

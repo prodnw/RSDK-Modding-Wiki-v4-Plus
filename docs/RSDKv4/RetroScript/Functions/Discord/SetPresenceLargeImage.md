@@ -1,5 +1,8 @@
 # SetPresenceLargeImage
 
+!!! notice
+    This is a new function added in RSDKv4+.
+
 Grabs an image from the art assets in your Discord application or a URL, and displays it on your status as the main icon.
 
 ## Parameters

@@ -1,5 +1,8 @@
 # SetPresenceState
 
+!!! notice
+    This is a new function added in RSDKv4+.
+
 Sends `text` to the Discord API, updating your status that would appear in smaller text next to the small image.
 
 ## Parameters

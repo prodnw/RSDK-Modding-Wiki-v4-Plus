@@ -1,5 +1,8 @@
 # ClearPresenceType
 
+!!! notice
+    This is a new function added in RSDKv4+.
+
 Clears a specific part of your Discord presence.
 
 ## Parameters

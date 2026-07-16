@@ -21,8 +21,23 @@ event ObjectUpdate
 end event
 ```
 
-!!! note
-	`ObjectUpdate` is parallel to the `ObjectMain` sub seen in RSDKv3 and earlier, though here the name was changed to match better.
+## (RSDKv4+ Only) ObjectMain
+Only works if `RETRO_VANILLA_LIKE` is on. This does the same thing as ObjectUpdate, only running under a different name used in older versions of the RSDKv4 Decompilations.
+``` title="Example"
+event ObjectMain
+	object.xpos += object.xvel
+	object.ypos += object.yvel
+	
+	object.animationTimer++
+	if object.animationTimer >= 8
+		object.frame++
+		if object.frame >= 4
+			object.frame = 0
+		end if
+		object.animationTimer = 0
+	end if
+end event
+```
 
 ## ObjectDraw
 Called once every frame (if priority allows) to draw the object. Although some objects in Sonic 1 and 2 also have movement or animation processing code in this event, it's strongly recommended to only include drawing code. Draw order is based on the object's `object.drawOrder` value.

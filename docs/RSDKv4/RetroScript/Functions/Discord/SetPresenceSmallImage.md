@@ -1,5 +1,8 @@
 # SetPresenceSmallImage
 
+!!! notice
+    This is a new function added in RSDKv4+.
+
 Grabs an image from the art assets in your Discord application or a URL, and displays it on your status as a little icon on the bottom right of the main icon.
 
 ## Parameters

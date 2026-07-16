@@ -29,7 +29,7 @@ Instead, you will need to clone the repository using Git, which you can get [her
 
 Clone the repo **recursively** by running this command in the target directory:
 ```
-git clone --recursive https://github.com/RSDKModding/RSDKv4-Decompilation
+git clone --recursive https://github.com/prodnw/rsdkv4-plus
 ```
 
 !!! warning
@@ -170,15 +170,24 @@ git clone --recursive https://github.com/RSDKModding/RSDKv4-Decompilation
 !!! warning
     These build flags modify certain aspects of the decomp; only use these if you know what you're doing!
 
-| Flag                             | Description                                                                                                                                                                                                       | Value Type                            | Default Value |
-| -------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------- | ------------- |
-| **RETRO_REVISION**               | The RSDKv4 revision to compile. Datapacks for certain versions of Sonic 1/2 only work on older revisions.                                                                                                         | Integer (See [Revisions](#revisions)) | `3`           |
-| **RETRO_DISABLE_PLUS**           | Disables access to content from Sonic Origins's Plus Expansion Pack. [**Any publicly distributed builds must have this flag enabled.**](https://github.com/RSDKModding/RSDKv4-Decompilation/blob/main/LICENSE.md) | Boolean                               | `off`         |
-| **RETRO_FORCE_CASE_INSENSITIVE** | Forces case insensivity when loading files.                                                                                                                                                                       | Boolean                               | `off`         |
-| **RETRO_MOD_LOADER**             | Enables the ability the load mods and certain features related to them.                                                                                                                                           | Boolean                               | `on`          |
-| **RETRO_NETWORKING**             | Enables networking features used for Sonic 2's 2P VS mode.                                                                                                                                                        | Boolean                               | `on`          |
-| **RETRO_USE_HW_RENDER**          | Enables the Hardware Renderer used for native menus and objects. **The main menu, pause menu, and touch controls will not be visible if this is disabled.**                                                       | Boolean                               | `on`          |
-| **RETRO_SDL_VERSION**            | Switches between using SDL 1.2 or SDL 2.                                                                                                                                                                          | Integer (`1` or `2`)                  | `2`           |
+| Flag                             | Description                                                                                                                                                                                                       																																	   				  																																	  | Value Type                            | Default Value 					 |
+| -------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------- | -------------------------------- |
+| **RETRO_REVISION**               | The RSDKv4 revision to compile. Datapacks for certain versions of Sonic 1/2 only work on older revisions.                                                                                                         																																	  				 																																	  | Integer (See [Revisions](#revisions)) | `3`          					 |
+| **RETRO_DISABLE_PLUS**           | Disables access to content from Sonic Origins's Plus Expansion Pack. [**Any publicly distributed builds must have this flag enabled.**](https://github.com/RSDKModding/RSDKv4-Decompilation/blob/main/LICENSE.md) 																																	   																																					  | Boolean                               | `off`        					 |
+| **RETRO_FORCE_CASE_INSENSITIVE** | Forces case insensivity when loading files.                                                                                                                                                                       																																	   				 																																	  | Boolean                               | `off`        					 |
+| **RETRO_MOD_LOADER**             | Enables the ability the load mods and certain features related to them.                                                                                                                                          																																	  																																					  | Boolean                               | `on`          					 |
+| **RETRO_NETWORKING**             | Enables networking features used for Sonic 2's 2P VS mode.                                                                                                                                                        																																	   																																					  | Boolean                               | `on`          					 |
+| **RETRO_USE_HW_RENDER**          | Enables the Hardware Renderer used for native menus and objects. **The main menu, pause menu, and touch controls will not be visible if this is disabled.**                                                     																																	   																																					  | Boolean                               | `on`          					 |
+| **RETRO_SDL_VERSION**            | Switches between using SDL 1.2 or SDL 2.                                                                                                                                                                          																																	   				  																																	  | Integer (`1` or `2`)                  | `2`           					 |
+| **RETRO_USE_STEAM**              | (RSDKv4+ Only) Enables the use of the SteamAPI, which can detects if you own [Sonic Origins](https://store.steampowered.com/app/1794960/Sonic_Origins/) and enable features specific to Origins. It also detects if you own [Sonic Origins Plus](https://store.steampowered.com/app/2343200/Sonic_Origins__Plus_Expansion_Pack/) and enables those features as well. This requires the [Steamworks SDK](https://partner.steamgames.com/downloads/list) extracted to `./dependencies/all/steamworks_sdk`. | Boolean                  			  | `off`         					 |
+| **RETRO_USE_DISCORD**            | (RSDKv4+ Only) Toggles whether or not Discord RPC is enabled if not on Android, requires the [Discord SDK](https://discord.com/developers/docs/developer-tools/game-sdk#getting-started) `sdk` folder extracted to `./dependencies/all/discord_game_sdk`. 																																	  																											  | Boolean                  			  | `on`         					 |
+| **RETRO_USE_CURL**               | (RSDKv4+ Only) Adds support for cURL, which is used for accessing websites. 																																	  																											  																																						 					  | Boolean                  			  | `off`         					 |
+| **RETRO_UPDATE_CHECKER**         | (RSDKv4+ Only) Adds support for the update checker, which is used for checking updates if not on Android, forces `RETRO_USE_CURL` to be set to `on`. 																																	  																											  																									  | Boolean                  			  | `on`      						 |
+| **RETRO_ACCEPT_OLD_SYNTAX**      | (RSDKv4+ Only) Adds back aliases that were previously defined within the engine and not the script, allowing compatibility for mods that were made with the old syntax. 																																	  																											  																				  | Boolean                  			  | `off`       					 |
+| **RETRO_VANILLA_LIKE**      	   | (RSDKv4+ Only) Brings back the original limitations of RSDKv4 (like the original palette bank limit, original stage object limit, and many more), while keeping new the features. 																																	  																											  																		  | Boolean                  			  | `off`     						 |
+| **RETRO_OUTPUT_NAME**      	   | (RSDKv4+ Only) The exported name of the executable. 																																	  																											  																																																	  | String                  			  | `RSDKv4+`         				 |
+| **RETRO_ICON_NAME**      	   	   | (RSDKv4+ Only) Sets the icon for the built executable to use. 																																	  																											  																		  																													  | String                  			  | `RSDKv4 Decomp Icon.ico`         |
+| **DECOMP_VERSION**      	   	   | (RSDKv4+ Only) Version of the decomp project. 																																	  																											  																		  																													  				  | String                  			  | `1.3.3`     				     |
 
 ### Revisions
 | Flag Value | Revision                        |
@@ -192,14 +201,14 @@ git clone --recursive https://github.com/RSDKModding/RSDKv4-Decompilation
 
 ### CMake error: "Cannot find source file" { id="cmake-cannot-find-source-file" }
 
-You did not clone the repository recursively, meaning the submodules are missing. You can get them by running the following command in the `RSDKv4-Decompilation` directory:
+You did not clone the repository recursively, meaning the submodules are missing. You can get them by running the following command in the `rsdkv4-plus` directory:
 ```
 git submodule update --remote --init
 ```
 
 ### Android Studio error: "INTERNAL: readdir: No such file or directory" { id="android-internal-readdir" }
 
-This error occurs if your path is long enough to build, but too long to rebuild. Deleting `RSDKv4-Decompilation/android/app/build` and attempting to build again should fix it.
+This error occurs if your path is long enough to build, but too long to rebuild. Deleting `rsdkv4-plus/android/app/build` and attempting to build again should fix it.
 
 ### Android Studio error: "Interrupt/exception caught (code = 0xc0000005)" { id="android-exception-code-05" }
 
