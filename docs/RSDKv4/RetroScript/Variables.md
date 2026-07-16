@@ -48,25 +48,32 @@
 | **stage.entityPos**              | The entity last loaded by the stage.                                                                                                                                               |
 
 ## Screen
-| Variable                		   | Description                                                                                                          |
-| -------------------------------- | -------------------------------------------------------------------------------------------------------------------- |
-| **screen.cameraEnabled**         | Determines if the camera is disabled or not.                                                                         |
-| **screen.cameraTarget**          | Gets the entity pos of an object and sets the camera to follow it. (Ex. screen.cameraTarget = SLOT_PLAYER1 (0))      |
-| **screen.cameraStyle**           | How the camera should track its target.                                                                              |
-| **screen.cameraX**       		   | The xpos of the camera in screen-space.                                                                              |
-| **screen.cameraY**       		   | The ypos of the camera in screen-space.                                                                              |
-| **screen.drawListSize**  		   | How many entities are being drawn on screen at once.                                                                 |
-| **screen.xcenter**       		   | The xcenter of the screen. By default, this value is 212.                                                            |
-| **screen.ycenter**       		   | The ycenter of the screen. By default, this value is 120, but cannot be normally changed.                            |
-| **screen.xsize**    		       | The xsize of the screen. By default, this value is 424.                                                              |
-| **screen.ysize**        		   | The ysize of the screen. By default, this value is 240, but cannot be normally changed.                              |
-| **screen.xoffset**        	   | The xoffset of the screen, relative to the very beginning of the scene.                                              |
-| **screen.yoffset**        	   | The yoffset of the screen, relative to the very beginning of the scene.                                              |
-| **screen.shakeX**        		   | If more than 0, this will horizontally shake the screen. The aggression of the shaking will depend on the value set. |
-| **screen.shakeY**        		   | If more than 0, this will vertically shake the screen. The aggression of the shaking will depend on the value set.   |
-| **screen.adjustCameraY** 		   | The amount the camera should vertically adjust.                                                                      |
-| **camera.direction** 	   		   | (RSDKv4+ Only) The direction that the camera is facing. It can be flipped to face in many directions.                |
-| **camera.drawLayer[X]Direction** | (RSDKv4+ Only) The direction of a specific drawing layer. `X` is what the layer would be                             |
+| Variable                		 | Description                                                                                                          |
+| ------------------------------ | -------------------------------------------------------------------------------------------------------------------- |
+| **screen.cameraEnabled**       | Determines if the camera is disabled or not.                                                                         |
+| **screen.cameraTarget**        | Gets the entity pos of an object and sets the camera to follow it. (Ex. screen.cameraTarget = SLOT_PLAYER1 (0))      |
+| **screen.cameraStyle**         | How the camera should track its target.                                                                              |
+| **screen.cameraX**       		 | The xpos of the camera in screen-space.                                                                              |
+| **screen.cameraY**       		 | The ypos of the camera in screen-space.                                                                              |
+| **screen.drawListSize**  		 | How many entities are being drawn on screen at once.                                                                 |
+| **screen.xcenter**       		 | The xcenter of the screen. By default, this value is 212.                                                            |
+| **screen.ycenter**       		 | The ycenter of the screen. By default, this value is 120, but cannot be normally changed.                            |
+| **screen.xsize**    		     | The xsize of the screen. By default, this value is 424.                                                              |
+| **screen.ysize**               | The ysize of the screen. By default, this value is 240, but cannot be normally changed.                              |
+| **screen.xoffset**        	 | The xoffset of the screen, relative to the very beginning of the scene.                                              |
+| **screen.yoffset**        	 | The yoffset of the screen, relative to the very beginning of the scene.                                              |
+| **screen.shakeX**        		 | If more than 0, this will horizontally shake the screen. The aggression of the shaking will depend on the value set. |
+| **screen.shakeY**        		 | If more than 0, this will vertically shake the screen. The aggression of the shaking will depend on the value set.   |
+| **screen.adjustCameraY** 		 | The amount the camera should vertically adjust.                                                                      |
+| **camera.direction** 	   		 | (RSDKv4+ Only) The direction that the camera is facing. It can be flipped to face in many directions.                |
+| **camera.drawLayer0Direction** | (RSDKv4+ Only) The direction of a drawing layer 0.                                                                   |
+| **camera.drawLayer1Direction** | (RSDKv4+ Only) The direction of a drawing layer 1.                                                                   |
+| **camera.drawLayer2Direction** | (RSDKv4+ Only) The direction of a drawing layer 2.                                                                   |
+| **camera.drawLayer3Direction** | (RSDKv4+ Only) The direction of a drawing layer 3.                                                                   |
+| **camera.drawLayer4Direction** | (RSDKv4+ Only) The direction of a drawing layer 4.                                                                   |
+| **camera.drawLayer5Direction** | (RSDKv4+ Only) The direction of a drawing layer 5.                                                                   |
+| **camera.drawLayer6Direction** | (RSDKv4+ Only) The direction of a drawing layer 6.                                                                   |
+| **camera.drawLayer7Direction** | (RSDKv4+ Only) The direction of a drawing layer 7.                                                                   |
 
 ## Audio
 | Variable               | Description                                                                                                                       |
