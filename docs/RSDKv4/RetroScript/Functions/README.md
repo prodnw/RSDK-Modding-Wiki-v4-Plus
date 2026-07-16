@@ -156,6 +156,7 @@
 ## Discord
 | Function                                                      | Description                                                                                      |
 | ------------------------------------------------------------- | ------------------------------------------------------------------------------------------------ |
+| [**SetPresenceName**](Discord/SetPresenceName.md)             | Sends `text` to the Discord API to display it as the main title of your application.             |
 | [**SetPresenceState**](Discord/SetPresenceState.md)           | Sends `text` to the Discord API to display it on your state status.                              |
 | [**SetPresenceDetails**](Discord/SetPresenceDetails.md)       | Sends `text` to the Discord API to display it on your details status.                            |
 | [**SetPresenceLargeImage**](Discord/SetPresenceLargeImage.md) | Uses an `image` from the art assets in your dev portal application to display it on your status. |

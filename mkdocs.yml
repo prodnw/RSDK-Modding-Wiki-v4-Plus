@@ -486,6 +486,7 @@ nav:
             - LoadFontFile: RSDKv4/RetroScript/Functions/Deprecated/LoadFontFile.md
             - DrawText: RSDKv4/RetroScript/Functions/Deprecated/DrawText.md
           - Discord:
+            - SetPresenceName: RSDKv4/RetroScript/Functions/Discord/SetPresenceName.md
             - SetPresenceState: RSDKv4/RetroScript/Functions/Discord/SetPresenceState.md
             - SetPresenceDetails: RSDKv4/RetroScript/Functions/Discord/SetPresenceDetails.md
             - SetPresenceLargeImage: RSDKv4/RetroScript/Functions/Discord/SetPresenceLargeImage.md
