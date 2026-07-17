@@ -99,8 +99,11 @@ CallNativeFunction4(NotifyCallback, NOTIFY_STATS_ENEMY, StageStatsUsabilityParam
 | [**GetModName**](GetModName.md)                               | Adds a text entry to `menu` with a mod's name as the text.                 |
 | [**GetModDescription**](GetModDescription.md)                 | Adds a text entry to `menu` with a mod's description as the text.          |
 | [**GetModAuthor**](GetModAuthor.md)                           | Adds a text entry to `menu` with a mod's author as the text.               |
+| [**GetModAuthorURL**](GetModAuthorURL.md)                     | Adds a text entry to `menu` with a mod's author URL as the text.           |
 | [**GetModVersion**](GetModVersion.md)                         | Adds a text entry to `menu` with a mod's version as the text.              |
 | [**GetModActive**](GetModActive.md)                           | Gets if a mod is enabled.                                                  |
 | [**SetModActive**](SetModActive.md)                           | Sets if a mod is enabled.                                                  |
 | [**MoveMod**](MoveMod.md)                                     | Shifts a mod up or down in the mods list.                                  |
+| [**GetModID**](GetModID.md)                                   | Gets a mods placement in your mod list.                                    |
+| [**CompareModPriority**](CompareModPriority.md)               | Compares the priority of 2 different mods.                                 |
 | [**RefreshEngine**](RefreshEngine.md)                         | Reloads the engine, the game, and all mods.                                |

@@ -455,10 +455,13 @@ nav:
                 - GetModName: RSDKv4/RetroScript/Functions/Misc/CallNativeFunction/GetModName.md
                 - GetModDescription: RSDKv4/RetroScript/Functions/Misc/CallNativeFunction/GetModDescription.md
                 - GetModAuthor: RSDKv4/RetroScript/Functions/Misc/CallNativeFunction/GetModAuthor.md
+                - GetModAuthorURL: RSDKv4/RetroScript/Functions/Misc/CallNativeFunction/GetModAuthorURL.md
                 - GetModVersion: RSDKv4/RetroScript/Functions/Misc/CallNativeFunction/GetModVersion.md
                 - GetModActive: RSDKv4/RetroScript/Functions/Misc/CallNativeFunction/GetModActive.md
                 - SetModActive: RSDKv4/RetroScript/Functions/Misc/CallNativeFunction/SetModActive.md
                 - MoveMod: RSDKv4/RetroScript/Functions/Misc/CallNativeFunction/MoveMod.md
+                - GetModID: RSDKv4/RetroScript/Functions/Misc/CallNativeFunction/GetModID.md
+                - CompareModPriority: RSDKv4/RetroScript/Functions/Misc/CallNativeFunction/CompareModPriority.md
                 - RefreshEngine: RSDKv4/RetroScript/Functions/Misc/CallNativeFunction/RefreshEngine.md
             - CheckTouchRect: RSDKv4/RetroScript/Functions/Misc/CheckTouchRect.md
             - CallFunction: RSDKv4/RetroScript/Functions/Misc/CallFunction.md
