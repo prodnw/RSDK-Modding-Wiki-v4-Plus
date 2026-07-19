@@ -82,13 +82,13 @@ Welcome to the RSDK Modding Wiki, your one-stop shop for documentation, resource
     ---
 
     Guides and tutorials for Retro Engine modding
-
+<!-- 
 -   :material-notebook: __[Blog](blog/index.md)__
 
     ---
 
     News from the RSDKModding Team
-
+-->
 </div>
 
 ## Contributing
