@@ -1,4 +1,4 @@
-# CheckControllerConnect
+# CheckControllerDisconnect
 
 !!! notice
     This is a new function added in RSDKv4+.
@@ -10,5 +10,5 @@ Sets `checkResult` to the result.
 
 ## Example
 ```
-CheckControllerConnect()
+CheckControllerDisconnect()
 ```
