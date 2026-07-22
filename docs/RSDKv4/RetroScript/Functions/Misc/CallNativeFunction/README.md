@@ -5,6 +5,7 @@ There are three versions of the function that can be used depending on the amoun
 
 - `CallNativeFunction` (no parameters)
 - `CallNativeFunction2` (two parameters)
+- `CallNativeFunction3` (three parameters) - V4+ ONLY
 - `CallNativeFunction4` (four parameters)
 
 In order to call a native function by name, a global variable named after the function must be added to the GameConfig. Once added, the engine will automatically set the value of the global variable to the ID of the native function.
@@ -29,6 +30,10 @@ CallNativeFunction(int callback)
 CallNativeFunction2(int callback, param1, param2)
 ```
 ```
+v4+ ONLY
+CallNativeFunction3(int callback, param1, param2, param3)
+```
+```
 CallNativeFunction4(int callback, param1, param2, param3, param4)
 ```
 
@@ -38,6 +43,10 @@ CallNativeFunction(Disconnect2PVS)
 ```
 ```
 CallNativeFunction2(TransmitGlobal, "vs.randomValue", vs.randomValue)
+```
+```
+v4+ ONLY
+CallNativeFunction3(NotifyCallback, NOTIFY_STATS_ENEMY, StageStatsUsabilityParam1, StageStatsUsabilityParam2)
 ```
 ```
 CallNativeFunction4(NotifyCallback, NOTIFY_STATS_ENEMY, StageStatsUsabilityParam1, StageStatsUsabilityParam2, StageStatsUsabilityParam3)
@@ -104,6 +113,6 @@ CallNativeFunction4(NotifyCallback, NOTIFY_STATS_ENEMY, StageStatsUsabilityParam
 | [**GetModActive**](GetModActive.md)                           | Gets if a mod is enabled.                                                  |
 | [**SetModActive**](SetModActive.md)                           | Sets if a mod is enabled.                                                  |
 | [**MoveMod**](MoveMod.md)                                     | Shifts a mod up or down in the mods list.                                  |
-| [**GetModID**](GetModID.md)                                   | Gets a mods placement in your mod list.                                    |
-| [**CompareModPriority**](CompareModPriority.md)               | Compares the priority of 2 different mods.                                 |
+| [**GetModID**](GetModID.md)                                   | (v4+ Only) Gets a mods placement in your mod list.                         |
+| [**CompareModPriority**](CompareModPriority.md)               | (v4+ Only) Compares the priority of 2 different mods.                      |
 | [**RefreshEngine**](RefreshEngine.md)                         | Reloads the engine, the game, and all mods.                                |

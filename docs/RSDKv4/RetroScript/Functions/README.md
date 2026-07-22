@@ -17,14 +17,21 @@
 | Function                                          | Description                                                                                                                                   |
 | ------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
 | [**SetMusicTrack**](Audio/SetMusicTrack.md)       | Loads a music file in the given track slot with the given loop point.                                                                         |
+| [**SetMusicTrackEx**](Audio/SetMusicTrackEx.md)   | Loads a music file in the given track slot with the given loop point, this one allows you specifiy an ending loop point.                      |
 | [**PlayMusic**](Audio/PlayMusic.md)               | Plays the music currently loaded in the given track slot.                                                                                     |
 | [**StopMusic**](Audio/StopMusic.md)               | Stops playing the currently playing music track, if one is playing.                                                                           |
 | [**PauseMusic**](Audio/PauseMusic.md)             | Pauses the currently playing music track, if one is playing.                                                                                  |
 | [**ResumeMusic**](Audio/ResumeMusic.md)           | If a track has been paused with [PauseMusic()](Audio/PauseMusic.md), resumes playing the track.                                               |
 | [**SwapMusicTrack**](Audio/SwapMusicTrack.md)     | Loads a music file in the given track slot with the given loop point, swapping the currently playing track if it's the one being overwritten. |
+| [**SetMusicModifier**](Audio/SetMusicModifier.md) | Modifises a music track that is playing in any way you like.                                           					                    |
 | [**PlaySfx**](Audio/PlaySfx.md)                   | Plays the sound effect in the given slot in the GameConfig or StageConfig, looping it if set to do so.                                        |
 | [**StopSfx**](Audio/StopSfx.md)                   | Stops all instances of the given sound effect playing.                                                                                        |
 | [**SetSfxAttributes**](Audio/SetSfxAttributes.md) | Sets the loop count and panning of the given sound effect to the given values.                                                                |
+| [**PauseSfx**](Audio/PauseSfx.md)                 | Pauses all instances of the given sound effect playing.                                                                                       |
+| [**ResumeSfx**](Audio/ResumeSfx.md)               | Resumes all instances of the given sound effect that have been paused.                                                                        |
+| [**PauseAllSfx**](Audio/PauseAllSfx.md)           | Pauses all sound effects playing.                                                                                       						|
+| [**ResumeAllSfx**](Audio/ResumeAllSfx.md)         | Resumes all sound effects that have been paused.                                                                         	               		|
+| [**StopAllSfx**](Audio/StopAllSfx.md)             | Stops all sound effects playing.                                                                                        						|
 
 ## Drawing
 | Function                                                    | Description                                                                                                                                    |
@@ -123,6 +130,7 @@
 | [**CallNativeFunction**](Misc/CallNativeFunction/README.md) | Sends a callback to the engine to run a native function.                                                 |
 | [**CheckTouchRect**](Misc/CheckTouchRect.md)                | Checks if there's a touch input between the given coordinates.                                           |
 | [**CallFunction**](Misc/CallFunction.md)                    | Calls the given object function.                                                                         |
+| [**CallFunctionObject**](Misc/CallFunctionObject.md)        | Calls the given object function in a specified object.                                                   |
 | [**SetupMenu**](Misc/SetupMenu.md)                          | Sets up `menu` with `rowCount` rows, `selectionCount` active selections and aligning set to `alignment`. |
 | [**AddMenuEntry**](Misc/AddMenuEntry.md)                    | Adds an entry to `menu` with the contents of `text`.                                                     |
 | [**EditMenuEntry**](Misc/EditMenuEntry.md)                  | Edits an entry of `menu` with the contents of `text` in `rowID`.                                         |
@@ -137,15 +145,20 @@
 | [**WriteSaveRAM**](Misc/WriteSaveRAM.md)                    | Writes the contents of SaveRAM to the save file on disk.                                                 |
 
 ## Input
-| Function                                                            | Description                                                                |
-| ------------------------------------------------------------------- | -------------------------------------------------------------------------- |
-| [**GetInputDeviceID**](Input/GetInputDeviceID.md)                   | Stores the ID of an input device in `store`. **RSDKv5U only.**             |
-| [**GetFilteredInputDeviceID**](Input/GetFilteredInputDeviceID.md)   | Stores the filtered ID of an input device in `store`. **RSDKv5U only.**    |
-| [**GetInputDeviceType**](Input/GetInputDeviceType.md)               | Stores the type of an input device in `store`. **RSDKv5U only.**           |
-| [**IsInputDeviceAssigned**](Input/IsInputDeviceAssigned.md)         | Checks if an input device has been assigned. **RSDKv5U only.**             |
-| [**AssignInputSlotToDevice**](Input/AssignInputSlotToDevice.md)     | Assigns a player to an input device. **RSDKv5U only.**                     |
-| [**IsInputSlotAssigned**](Input/IsInputSlotAssigned.md)             | Checks if a player has been assigned to an input device. **RSDKv5U only.** |
-| [**ResetInputSlotAssignments**](Input/ResetInputSlotAssignments.md) | Resets all input slot assignments. **RSDKv5U only.**                       |
+| Function                                                            | Description                                                                      |
+| ------------------------------------------------------------------- | -------------------------------------------------------------------------------- |
+| [**GetInputDeviceID**](Input/GetInputDeviceID.md)                   | Stores the ID of an input device in `store`. **RSDKv5U only.**                   |
+| [**GetFilteredInputDeviceID**](Input/GetFilteredInputDeviceID.md)   | Stores the filtered ID of an input device in `store`. **RSDKv5U only.**          |
+| [**GetInputDeviceType**](Input/GetInputDeviceType.md)               | Stores the type of an input device in `store`. **RSDKv5U only.**                 |
+| [**IsInputDeviceAssigned**](Input/IsInputDeviceAssigned.md)         | Checks if an input device has been assigned. **RSDKv5U only.**                   |
+| [**AssignInputSlotToDevice**](Input/AssignInputSlotToDevice.md)     | Assigns a player to an input device. **RSDKv5U only.**                           |
+| [**IsInputSlotAssigned**](Input/IsInputSlotAssigned.md)             | Checks if a player has been assigned to an input device. **RSDKv5U only.**       |
+| [**ResetInputSlotAssignments**](Input/ResetInputSlotAssignments.md) | Resets all input slot assignments. **RSDKv5U only.**                             |
+| [**VibrateController**](Input/VibrateController.md)                 | Vibrates your controller.                                                        |
+| [**SetControllerLEDColour**](Input/SetControllerLEDColour.md)       | For PlayStation controllers, allows you to change the colour of the LED on them. |
+| [**SetControllerLEDColour**](Input/SetControllerLEDColour.md)       | For PlayStation controllers, allows you to change the colour of the LED on them. |
+| [**CheckControllerConnect**](Input/CheckControllerConnect.md)       | Checks if a new controller has been connected to your device.                    |
+| [**CheckControllerDisconnect**](Input/CheckControllerDisconnect.md) | Checks if a controller has been disconnected to your device.                     |
 
 ## Deprecated
 | Function                                       | Description                                                  |
@@ -166,3 +179,10 @@
 | [**UpdatePresence**](Discord/UpdatePresence.md)               | Updates the your RPC based on the commands above.                                                |
 | [**ClearPresence**](Discord/ClearPresence.md)                 | Completely gets rid of your status.                                                              |
 | [**ClearPresenceType**](Discord/ClearPresenceType.md)         | Completely gets rid of one of your statuses.                                                     |
+
+
+## URL
+| Function                                | Description                              |
+| --------------------------------------- | ---------------------------------------- |
+| [**CheckUpdates**](URL/CheckUpdates.md) | Checks for any new updates on a project. |
+| [**LoadWebsite**](URL/LoadWebsite.md)   | Loads any specified website.             |

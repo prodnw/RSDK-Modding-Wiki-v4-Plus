@@ -323,14 +323,21 @@ nav:
             - TransformVertices: RSDKv4/RetroScript/Functions/3D/TransformVertices.md
           - Audio:
             - SetMusicTrack: RSDKv4/RetroScript/Functions/Audio/SetMusicTrack.md
+            - SetMusicTrackEx: RSDKv4/RetroScript/Functions/Audio/SetMusicTrackEx.md
             - PlayMusic: RSDKv4/RetroScript/Functions/Audio/PlayMusic.md
             - StopMusic: RSDKv4/RetroScript/Functions/Audio/StopMusic.md
             - PauseMusic: RSDKv4/RetroScript/Functions/Audio/PauseMusic.md
             - ResumeMusic: RSDKv4/RetroScript/Functions/Audio/ResumeMusic.md
             - SwapMusicTrack: RSDKv4/RetroScript/Functions/Audio/SwapMusicTrack.md
+            - SetMusicModifier: RSDKv4/RetroScript/Functions/Audio/SetMusicModifier.md
             - PlaySfx: RSDKv4/RetroScript/Functions/Audio/PlaySfx.md
             - StopSfx: RSDKv4/RetroScript/Functions/Audio/StopSfx.md
             - SetSfxAttributes: RSDKv4/RetroScript/Functions/Audio/SetSfxAttributes.md
+            - PauseSfx: RSDKv4/RetroScript/Functions/Audio/PauseSfx.md
+            - ResumeSfx: RSDKv4/RetroScript/Functions/Audio/ResumeSfx.md
+            - PauseAllSfx: RSDKv4/RetroScript/Functions/Audio/PauseAllSfx.md
+            - ResumeAllSfx: RSDKv4/RetroScript/Functions/Audio/ResumeAllSfx.md
+            - StopAllSfx: RSDKv4/RetroScript/Functions/Audio/StopAllSfx.md
           - Drawing:
             - DrawTintRect: RSDKv4/RetroScript/Functions/Drawing/DrawTintRect.md
             - LoadPalette: RSDKv4/RetroScript/Functions/Drawing/LoadPalette.md
@@ -465,6 +472,7 @@ nav:
                 - RefreshEngine: RSDKv4/RetroScript/Functions/Misc/CallNativeFunction/RefreshEngine.md
             - CheckTouchRect: RSDKv4/RetroScript/Functions/Misc/CheckTouchRect.md
             - CallFunction: RSDKv4/RetroScript/Functions/Misc/CallFunction.md
+            - CallFunctionObject: RSDKv4/RetroScript/Functions/Misc/CallFunctionObject.md
             - SetupMenu: RSDKv4/RetroScript/Functions/Misc/SetupMenu.md
             - AddMenuEntry: RSDKv4/RetroScript/Functions/Misc/AddMenuEntry.md
             - EditMenuEntry: RSDKv4/RetroScript/Functions/Misc/EditMenuEntry.md
@@ -485,6 +493,10 @@ nav:
             - AssignInputSlotToDevice: RSDKv4/RetroScript/Functions/Input/AssignInputSlotToDevice.md
             - IsInputSlotAssigned: RSDKv4/RetroScript/Functions/Input/IsInputSlotAssigned.md
             - ResetInputSlotAssignments: RSDKv4/RetroScript/Functions/Input/ResetInputSlotAssignments.md
+            - VibrateController: RSDKv4/RetroScript/Functions/Input/VibrateController.md
+            - SetControllerLEDColour: RSDKv4/RetroScript/Functions/Input/SetControllerLEDColour.md
+            - CheckControllerConnect: RSDKv4/RetroScript/Functions/Input/CheckControllerConnect.md
+            - CheckControllerDisconnect: RSDKv4/RetroScript/Functions/Input/CheckControllerDisconnect.md
           - Deprecated:
             - LoadFontFile: RSDKv4/RetroScript/Functions/Deprecated/LoadFontFile.md
             - DrawText: RSDKv4/RetroScript/Functions/Deprecated/DrawText.md
@@ -499,6 +511,9 @@ nav:
             - UpdatePresence: RSDKv4/RetroScript/Functions/Discord/UpdatePresence.md
             - ClearPresence: RSDKv4/RetroScript/Functions/Discord/ClearPresence.md
             - ClearPresenceType: RSDKv4/RetroScript/Functions/Discord/ClearPresenceType.md
+          - URL:
+            - CheckUpdates: RSDKv4/RetroScript/Functions/URL/CheckUpdates.md
+            - LoadWebsite: RSDKv4/RetroScript/Functions/URL/LoadWebsite.md
 
     - RSDKv5:
       - RSDKv5/README.md
